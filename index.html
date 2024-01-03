@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Q2Participation2</title>
+	<style>
+		.container {display: block;position: relative;padding-left: 35px;margin-bottom: 12px;cursor: pointer;font-size: 22px;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;}
+		.container input {position: absolute;opacity: 0;cursor: pointer;height: 0;width: 0;}
+		.checkmark {position: absolute;top: 0;left: 0;height: 25px;width: 25px;background-color: #95B1AE;}
+		.container:hover input ~ .checkmark {background-color: #627C79;}
+		.container input:checked ~ .checkmark {background-color:#3C846A;}
+		.checkmark:after {content: "";position: absolute;display: none;}
+		.container input:checked ~ .checkmark:after {display: block;}.container .checkmark:after {left: 9px;top: 5px;width: 5px;height: 10px;border: solid white;border-width: 0 3px 3px 0;-webkit-transform: rotate(45deg);-ms-transform: rotate(45deg);transform: rotate(45deg);}
+		/*reference for code above this: https://www.w3schools.com/howto/howto_css_custom_checkbox.asp*/
+		#background {padding:20px;background-color: #155955; color:#E6F9E1; margin:40px; width: 45%;margin-top:20px; margin-right:auto; margin-bottom:20px; margin-left:auto;}
+		#border{padding:40px;border:thick #95B1AE;border-style:double;}
+		h1 {border-bottom: 2px solid white; padding-bottom: 10px; text-align:center; font-family:"courier new"; font-size:35px; letter-spacing:8px}
+		p {color:#E1F8F6; font-family:"courier new"; font-weight:bold; font-size:22px;}
+		body{background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='20' height='20' patternTransform='scale(2) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(0,0%,100%,1)'/><path d='M-5 5L5.1 15 15 5l10 10'  stroke-linecap='square' stroke-width='1' stroke='hsla(174, 15%, 64%, 1)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>")}
+	</style>
+</head>
+<body>
+	<div id="background">
+		<div id="border">
+		<h1>2024 BUCKET LIST</h1>
+		<br>
+			<label class="container"><p>write more (outside of school/non-academic writing)</p><input type="checkbox"><span class="checkmark"></span></label>
+
+			<label class="container"><p>read more books (preferably classics/revisit ones such as percy jackson) and continue book & film tracker</p><input type="checkbox"><span class="checkmark"></span></label>
+
+			<label class="container"><p>win a gold/first place for an event in gymnastics and/or get an overall trophy for WAG level 3</p><input type="checkbox"><span class="checkmark"></span></label>
+
+			<label class="container"><p>practice skills for WAG level 4</p><input type="checkbox"><span class="checkmark"></span></label>
+
+			<label class="container"><p>improve volleyball skills</p><input type="checkbox"><span class="checkmark"></span></label>
+
+			<label class="container"><p>visit a museum with friends</p><input type="checkbox"><span class="checkmark"></span></label>
+
+			<label class="container"><p>visit a library (outside of school)</p><input type="checkbox"><span class="checkmark"></span></label>
+
+			<label class="container"><p>visit universities and/or the university where my parents graduated</p><input type="checkbox"><span class="checkmark"></span></label>
+
+			<label class="container"><p>travel locally and/or internationally (?) with my family and (attempt) to photojournal/videojournal it</p><input type="checkbox"><span class="checkmark"></span></label>
+
+			<label class="container"><p>have dance (acro/contemporary/lyrical) lessons again</p><input type="checkbox"><span class="checkmark"></span></label>
+
+			<label class="container"><p>watch a musical/play</p><input type="checkbox"><span class="checkmark"></span></label>
+
+			<label class="container"><p>try ice skating again and/or try lessons</p><input type="checkbox"><span class="checkmark"></span></label>
+		</div>
+	</div>
+</body>
+</html>
